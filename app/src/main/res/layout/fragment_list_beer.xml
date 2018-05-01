@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20px"
+    android:background="@color/backgroundColor"
+    tools:context="br.com.fiapappbeer.ui.main.listBeer.ListBeerFragment">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Base.Widget.AppCompat.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="visible"/>
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="Beers"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:id="@+id/lblListBeers"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/lblListBeers"
+        android:id="@+id/rvBeer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</RelativeLayout>

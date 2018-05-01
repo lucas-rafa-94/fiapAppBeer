@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">fiapAppBeer</string>
+    <string name="logar">Login</string>
+    <string name="cadastro">Não possui cadastro? <![CDATA[<font color=#EF6C00>Cadastre-se</font>]]></string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_sobre">Sobre</string>
+    <string name="title_list">Beers</string>
+    <string name="title_cadastro">Cadastro</string>
+    <string name="menu_marca"><![CDATA[<font color=#EF6C00>Marca: </font>]]></string>
+    <string name="menu_tpEmbalagem"><![CDATA[<font color=#EF6C00>Tipo Embalagem: </font>]]></string>
+    <string name="menu_unidadeMedida"><![CDATA[<font color=#EF6C00>Quantidade: </font>]]></string>
+    <string name="menu_preco"><![CDATA[<font color=#EF6C00>Preço: </font>]]></string>
+</resources>

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20px"
+    android:background="@color/backgroundColor"
+    android:layout_height="match_parent"
+    tools:context="br.com.fiapappbeer.ui.main.insertBeer.CadastroBeerFragment">
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="Cadastro"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:id="@+id/lblCadastroBeers"/>
+
+    <EditText
+        android:textSize="12sp"
+        android:id="@+id/edtMarca"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColorHint="@color/whiteColor"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/lblCadastroBeers"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:hint="Marca"
+        android:background="@drawable/custom_edt_text"/>
+
+    <EditText
+        android:textSize="12sp"
+        android:id="@+id/edtTipoEmbalagem"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColorHint="@color/whiteColor"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/edtMarca"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:hint="Tipo Embalagem"
+        android:background="@drawable/custom_edt_text"/>
+
+    <EditText
+        android:textSize="12sp"
+        android:id="@+id/edtUnidadeMedida"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColorHint="@color/whiteColor"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/edtTipoEmbalagem"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:inputType="text"
+        android:hint="Unidade Medida"
+        android:background="@drawable/custom_edt_text"/>
+
+    <EditText
+        android:textSize="12sp"
+        android:id="@+id/edtValorMedida"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColorHint="@color/whiteColor"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/edtUnidadeMedida"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:inputType="number"
+        android:hint="Valor Medida"
+        android:background="@drawable/custom_edt_text"/>
+
+    <EditText
+        android:textSize="12sp"
+        android:id="@+id/edtPreco"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColorHint="@color/whiteColor"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/edtValorMedida"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:inputType="number"
+        android:hint="Preço"
+        android:background="@drawable/custom_edt_text"/>
+
+    <Button
+        android:id="@+id/btnCadastroBeer"
+        android:text="Cadastrar"
+        android:textAllCaps="false"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColor="@color/whiteColor"
+        android:layout_marginTop="40px"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@drawable/custom_btn_login"
+        android:layout_below="@id/edtPreco"/>
+
+
+</RelativeLayout>

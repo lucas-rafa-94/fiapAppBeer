@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:padding="20px"
+    tools:context="br.com.fiapappbeer.ui.main.sobre.SobreFragment">
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="Sobre"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:id="@+id/lblSobre"/>
+
+    <TextView
+        android:layout_below="@+id/label"
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:text="Logo"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColor="@color/whiteColor"
+        android:textSize="20sp"
+        android:id="@+id/lblLogo"/>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:background="@drawable/custom_edt_text"
+        android:id="@+id/label"
+        android:layout_below="@id/lblSobre"/>
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="300px"
+        android:layout_centerHorizontal="true"
+        android:layout_height="200px"
+        android:layout_below="@id/lblLogo"
+        android:src="@drawable/beer"/>
+
+    <TextView
+        android:layout_below="@+id/ivLogo"
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:text="Autor"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColor="@color/whiteColor"
+        android:textSize="20sp"
+        android:id="@+id/lblAutor"/>
+
+    <TextView
+        android:layout_below="@+id/lblAutor"
+        android:layout_marginTop="20px"
+        android:layout_width="300px"
+        android:layout_height="60px"
+        android:layout_centerHorizontal="true"
+        android:text="Lucas Rafael dos Santos"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:id="@+id/lblAutorValor"/>
+
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_marginTop="50px"
+        android:layout_below="@+id/lblAutorValor"
+        android:layout_width="match_parent"
+        android:background="@drawable/custom_btn_delete"
+        android:textColor="@color/whiteColor"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:text="Logout"
+        android:layout_height="100px" />
+
+
+</RelativeLayout>

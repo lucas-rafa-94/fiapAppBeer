@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroundColor"
+    android:layout_width="match_parent"
+    android:padding="20px"
+    android:layout_height="match_parent"
+    tools:context="br.com.fiapappbeer.ui.main.insertBeer.EditBeerActivity">
+    <TextView
+        android:id="@+id/lblEdidar"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="40px"
+        android:text="Editar"
+        android:textSize="25sp"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColor="@color/colorPrimary"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@+id/lblEdidar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ivEditFoto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <TextView
+        android:layout_marginTop="10px"
+        android:layout_below="@id/ivEditFoto"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:layout_width="match_parent"
+        android:text="Marca"
+        android:id="@+id/tvEditMarca"
+        android:layout_height="30px" />
+    <TextView
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textSize="12sp"
+        android:textColor="@color/whiteColor"
+        android:layout_below="@id/tvEditMarca"
+        android:id="@+id/lblEditMarca"
+        android:layout_width="match_parent"
+        android:layout_height="30px" />
+
+    <TextView
+        android:layout_marginTop="10px"
+        android:layout_below="@id/lblEditMarca"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:layout_width="match_parent"
+        android:text="Tipo Embalagem"
+        android:id="@+id/tvEditTipoEmbalagem"
+        android:layout_height="30px" />
+
+    <TextView
+        android:textSize="12sp"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColor="@color/whiteColor"
+        android:layout_below="@id/tvEditTipoEmbalagem"
+        android:id="@+id/lblEditTipoEmbalagem"
+        android:layout_width="match_parent"
+        android:layout_height="30px" />
+
+
+    <TextView
+        android:layout_marginTop="10px"
+        android:layout_below="@id/lblEditTipoEmbalagem"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:layout_width="match_parent"
+        android:text="Unidade Medida"
+        android:id="@+id/tvEditUnidadeMedida"
+        android:layout_height="30px" />
+
+    <EditText
+        android:textColor="@color/whiteColor"
+        android:textSize="12sp"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:background="@drawable/custom_edt_text"
+        android:layout_below="@id/tvEditUnidadeMedida"
+        android:id="@+id/edtEditUnidadeMedida"
+        android:layout_width="match_parent"
+        android:layout_height="30px" />
+
+    <TextView
+        android:layout_marginTop="10px"
+        android:layout_below="@id/edtEditUnidadeMedida"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:layout_width="match_parent"
+        android:text="Valor Medida"
+        android:id="@+id/tvEditValorMedida"
+        android:layout_height="30px" />
+
+    <EditText
+        android:textColor="@color/whiteColor"
+        android:textSize="12sp"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:background="@drawable/custom_edt_text"
+        android:layout_below="@id/tvEditValorMedida"
+        android:id="@+id/edtEditValorMedida"
+        android:layout_width="match_parent"
+        android:layout_height="30px" />
+
+    <TextView
+        android:layout_marginTop="10px"
+        android:layout_below="@id/edtEditValorMedida"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:layout_width="match_parent"
+        android:text="Preço"
+        android:id="@+id/tvEditPreco"
+        android:layout_height="30px" />
+
+    <EditText
+        android:textColor="@color/whiteColor"
+        android:textSize="12sp"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:background="@drawable/custom_edt_text"
+        android:layout_below="@id/tvEditPreco"
+        android:id="@+id/edtEditPreco"
+        android:layout_width="match_parent"
+        android:layout_height="30px" />
+
+    <Button
+        android:id="@+id/btnAtualizar"
+        android:layout_marginTop="50px"
+        android:layout_below="@+id/edtEditPreco"
+        android:layout_width="match_parent"
+        android:background="@drawable/custom_btn_login"
+        android:textColor="@color/whiteColor"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:onClick="updateBeer"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:text="Atualizar"
+        android:layout_height="100px" />
+
+    <Button
+        android:layout_marginTop="20px"
+        android:layout_below="@+id/btnAtualizar"
+        android:layout_width="match_parent"
+        android:background="@drawable/custom_btn_delete"
+        android:textColor="@color/whiteColor"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:onClick="deleteBeer"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:text="Excluir"
+        android:layout_height="100px" />
+
+
+
+</RelativeLayout>

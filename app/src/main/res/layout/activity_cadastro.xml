@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20px"
+    android:background="@color/backgroundColor"
+    tools:context="br.com.fiapappbeer.ui.login.CadastroActivity">
+
+    <TextView
+        android:id="@+id/lblCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="40px"
+        android:text="Cadastro"
+        android:textSize="25sp"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:textSize="12sp"
+        android:id="@+id/edtNome"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColorHint="@color/whiteColor"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/lblCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:hint="Nome"
+        android:background="@drawable/custom_edt_text"/>
+
+    <EditText
+        android:textSize="12sp"
+        android:id="@+id/edtEmail"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColorHint="@color/whiteColor"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:hint="Email"
+        android:background="@drawable/custom_edt_text"/>
+
+    <EditText
+        android:textSize="12sp"
+        android:id="@+id/edtPassword"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColorHint="@color/whiteColor"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:background="@drawable/custom_edt_text"/>
+
+    <EditText
+        android:textSize="12sp"
+        android:id="@+id/edtIdade"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColorHint="@color/whiteColor"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:inputType="number"
+        android:hint="Idade"
+        android:background="@drawable/custom_edt_text"/>
+
+    <Button
+        android:onClick="criaUsuario"
+        android:text="Cadastrar"
+        android:textAllCaps="false"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColor="@color/whiteColor"
+        android:layout_marginTop="40px"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@drawable/custom_btn_login"
+        android:layout_below="@id/edtIdade"/>
+
+</RelativeLayout>

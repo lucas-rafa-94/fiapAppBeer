@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20px"
+    android:background="@drawable/custom_list_item"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@+id/lblEdidar"
+        android:layout_centerHorizontal="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginLeft="10px"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:id="@+id/ivFoto"/>
+
+    <LinearLayout
+        android:layout_marginTop="5px"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_marginLeft="15px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_list_item"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txtMarca"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColor="@color/whiteColor"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:text="@string/menu_marca" />
+
+    <TextView
+        android:id="@+id/txtEmbalagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColor="@color/whiteColor"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:text="@string/menu_tpEmbalagem" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txtMedida"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColor="@color/whiteColor"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="35dp"
+        tools:text="@string/menu_unidadeMedida" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txtPreco"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/american_typewriter_regular"
+        android:textColor="@color/whiteColor"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="54dp"
+        tools:text="@string/menu_preco" />
+    </LinearLayout>
+
+</LinearLayout>
